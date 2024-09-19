@@ -1,0 +1,163 @@
+/* Base styles */
+#pumpers-waitlist {
+    font-family: 'Reyes Light', Arial, sans-serif;
+}
+
+/* Styling the "Add to Waitlist" Button */
+#pumpers-add-guest-btn {
+    color: #ffffff;
+    background-color: #d35400;
+    border: none;
+    padding: 6px 10px;
+    font-family: 'Reyes Light', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+/* Button styles within the Add Guest Form */
+#pumpers-add-guest-form button {
+    color: #ffffff;
+    background-color: #21b48a;
+    border: none;
+    padding: 6px 10px;
+    font-family: 'Reyes Light', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+/* Styling the Add Guest Form */
+.page #pumpers-add-guest {
+    background: white !important;
+    padding: 2vw !important;
+    color: #333 !important;
+    border-radius: 5px !important;
+    box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07) !important;
+    border: none !important;
+}
+
+/* Form input styles */
+#pumpers-add-guest-form input,
+#pumpers-add-guest-form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    font-size: 14px;
+    font-family: 'Reyes Light', sans-serif;
+    border: 1px solid #ccc;
+}
+
+/* Table styles */
+#pumpers-waitlist-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    table-layout: fixed;
+}
+
+#pumpers-waitlist-table th,
+#pumpers-waitlist-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#pumpers-waitlist-table th {
+    font-family: 'Reyes', sans-serif;
+    background-color: #21b48a;
+    color: #ffffff;
+    text-align: center;
+}
+
+#pumpers-waitlist-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Column widths */
+#pumpers-waitlist-table th:nth-child(1),
+#pumpers-waitlist-table td:nth-child(1) {
+    width: 5%;
+} /* Position */
+
+#pumpers-waitlist-table th:nth-child(2),
+#pumpers-waitlist-table td:nth-child(2) {
+    width: 15%;
+} /* Name */
+
+#pumpers-waitlist-table th:nth-child(3),
+#pumpers-waitlist-table td:nth-child(3) {
+    width: 12%;
+} /* Phone */
+
+#pumpers-waitlist-table th:nth-child(4),
+#pumpers-waitlist-table td:nth-child(4) {
+    width: 10%;
+} /* Quoted Time */
+
+#pumpers-waitlist-table th:nth-child(5),
+#pumpers-waitlist-table td:nth-child(5) {
+    width: 10%;
+} /* Time Added */
+
+#pumpers-waitlist-table th:nth-child(6),
+#pumpers-waitlist-table td:nth-child(6) {
+    width: 8%;
+} /* Guest Count */
+
+#pumpers-waitlist-table th:nth-child(7),
+#pumpers-waitlist-table td:nth-child(7) {
+    width: 15%;
+    text-align: center;
+} /* Actions */
+
+/* Styling the action buttons */
+.pumpers-action-btn {
+    font-family: 'Reyes Light', sans-serif;
+    text-transform: uppercase;
+    padding: 5px 8px;
+    font-size: 12px;
+    margin: 2px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.seat-guest {
+    background-color: #43aecf;
+}
+
+.cancel-guest {
+    background-color: #c0392b;
+}
+
+/* Adjusting margins around the waitlist */
+.h-row #pumpers-waitlist {
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    #pumpers-waitlist-table {
+        font-size: 12px;
+    }
+
+    #pumpers-waitlist-table th,
+    #pumpers-waitlist-table td {
+        padding: 5px;
+    }
+
+    .pumpers-action-btn {
+        padding: 3px 6px;
+        font-size: 10px;
+    }
+}

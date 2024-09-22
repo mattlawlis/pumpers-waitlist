@@ -145,7 +145,7 @@ function pumpers_waitlist_sms_template_added_render() {
     $template = isset($options['sms_template_added']) ? $options['sms_template_added'] : 'You have been added to the waitlist.';
     ?>
     <textarea name='pumpers_waitlist_options[sms_template_added]' rows='3' cols='70'><?php echo esc_textarea($template); ?></textarea>
-    <p>Use placeholders: {name}, {quoted_time}, {position}</p>
+    <p>Use placeholders: {name}, {guest_count}, {quoted_time}, {position}</p>
     <?php
 }
 
